@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <style>
+      body {
+        font-size: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .content {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .content > section {
+        padding: 0.5em;
+      }
+
+      .content > section:first-child {
+        min-width: 200px;
+        max-width: 500px;
+        flex-grow: 1;
+      }
+
+      .content > section:not(:first-child) {
+        min-width: 200px;
+        max-width: 400px;
+        flex-grow: 1;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      button {
+        background-color: #323143;
+        color: rgb(237, 237, 237);
+        border: none;
+        padding: 1em;
+        width: 100%;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      button .normal {
+        font-weight: normal;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .shortcut-key {
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.1em 0.4em;
+        margin: 0 0.2em;
+        box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+        background-color: #f7f7f7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="content">
+      <section>
+        <h1>Thank you for installing Sticky Notes!</h1>
+        <p>
+          Sticky Note works by using
+          <span
+            ><span class="shortcut-key">Ctrl</span> +
+            <span class="shortcut-key">Shift</span> +
+            <span class="shortcut-key">H</span></span
+          >
+          to add sticky notes, highlights, and drawings on the page
+        </p>
+        <p>
+          Also check out the minimalistic text editor.
+          <span
+            ><span class="shortcut-key">Ctrl</span> +
+            <span class="shortcut-key">Shift</span> +
+            <span class="shortcut-key">Y</span></span
+          >
+        </p>
+        <p>
+          <a href="https://discord.gg/nbrwqrjYn2">Join the discord</a> to
+          contact me. I will respond within 24 hours
+        </p>
+      </section>
+      <section>
+        <h2>Getting Started</h2>
+        <p>
+          Sticky Note Plus is free forever but to place more than 3 sticky notes
+          per site please support the development of this extension.
+        </p>
+        <button id="pay-now">
+          Subscribe <span class="normal">$5.45/month</span>
+        </button>
+      </section>
+    </main>
+    <script src="../install.js"></script>
+  </body>
+</html>

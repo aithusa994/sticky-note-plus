@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Browse Notes and Drawings</title>
+    <style>
+        #notes>* {
+            margin-top: 5px;
+        }
+
+        ::backdrop {
+            background-image: linear-gradient(45deg,
+                    magenta,
+                    rebeccapurple,
+                    dodgerblue,
+                    green);
+            opacity: 0.75;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Notes</h1>
+    <div id="notes"></div>
+    <h1>Drawings</h1>
+    <div id="drawings"></div>
+    <script src="../browser.js"></script>
+</body>
+
+</html>

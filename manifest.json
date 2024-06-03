@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Sticky Notes Plus",
+  "permissions": ["storage", "activeTab", "unlimitedStorage", "contextMenus"],
+  "optional_permissions": ["webRequest"],
+  "version": "1.0.1",
+  "description": "Place and share sticky notes on webpages",
+  "commands": {
+    "open-full-notes": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Open the minimalistic text editor"
+    },
+    "toggle-notes-menu": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "Command+Shift+H"
+      },
+      "description": "Toggle the menu for taking notes and drawing"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "css": ["html/styles.css"],
+      "matches": ["<all_urls>"],
+      "exclude_globs": ["*.pdf"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://stickynoteplus.com/share*"],
+      "js": ["share.js"]
+    }
+  ],
+  "icons": {
+    "128": "assets/logo-48x48.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

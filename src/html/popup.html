@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 300px;
+        }
+
+        #notes {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .note {
+            background-color: antiquewhite;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1em;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 6;
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
+        .div3 {
+            grid-area: 2 / 3 / 3 / 5;
+        }
+
+        button {
+            font-size: 12px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1"> <button>Unlock Premium Features</button></div>
+        <div class="div2">
+            <button>Contact Developer</button>
+        </div>
+        <div class="div3"><button>Toggle Menu (Ctrl + Shift + H)</button></div>
+    </div>
+    <h1>Notes on this page</h1>
+    <div id="notes">
+        <div class="note">
+            text inner note
+        </div>
+    </div>
+</body>
+
+</html>

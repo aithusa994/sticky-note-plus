@@ -1,0 +1,51 @@
+.sticky--note_note {
+  display: flex;
+  resize: both;
+  flex-direction: column;
+  align-items: stretch;
+  width: 250px;
+  height: 250px;
+  background-color: #ffea9691;
+  position: absolute !important;
+  z-index: 99999;
+  font-size: 16px;
+}
+
+.sticky--note_container button {
+  cursor: pointer !important;
+  border: 2px solid black !important;
+  background-color: gray !important;
+}
+
+.sticky--note_bar {
+  position: fixed;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 10px;
+  margin: 0 auto;
+  top: 20px;
+  z-index: 99999;
+  border-radius: 10px;
+  background-color: #d9dadf;
+}
+
+.sticky--placed {
+  background-color: #ffea96bb
+}
+.sticky--shared {
+  background-color: #e396ffbb
+}
+
+#sticky--canvas {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /*Default can click through canvas. Will be toggled when drawing activated*/
+}
+
+.highlight {
+  background-color: yellow;
+}
