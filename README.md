@@ -3,6 +3,11 @@ Easily stick notes onto websites for remembering and collecting information. Qui
 
 Extension page: https://chromewebstore.google.com/detail/sticky-notes-plus/gdcmnnclkneggcgjookihlggijjkdhli
 
+
+
+https://github.com/aithusa994/sticky-note-plus/assets/171614375/ba2e55b1-ba6a-4f62-87b4-2c02f4968e47
+
+
 ## Key features:
 ### Sticky Notes: 
 Place sticky notes on x, y coordinates. Notes are autosaved using chromes local storage and are never sent over the internet unless you choose to share them with others.
