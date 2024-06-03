@@ -1,6 +1,8 @@
 # Sharable Sticky Notes Chrome Extension
 Easily stick notes onto websites for remembering and collecting information. Quickly jot down ideas and save time opening up apps.
 
+Extension page: https://chromewebstore.google.com/detail/sticky-notes-plus/gdcmnnclkneggcgjookihlggijjkdhli
+
 ## Key features:
 ### Sticky Notes: 
 Place sticky notes on x, y coordinates. Notes are autosaved using chromes local storage and are never sent over the internet unless you choose to share them with others.
